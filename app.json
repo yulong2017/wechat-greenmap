@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#009b6e",
+    "navigationBarTitleText": "大连易和熙园社区",
+    "navigationBarTextStyle":"right"
+  },
+
+  "tabBar": {
+    "borderStyle": "black",
+      "list": [
+        {
+          "color": "#FFF0",
+          "pagePath": "pages/index/index",
+          "text": "地图"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "设置"
+        },
+        {
+          "pagePath": "pages/me/me",
+          "text": "关于"
+        }
+      ]
+    }
+}

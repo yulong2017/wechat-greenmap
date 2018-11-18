@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/>
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view>
+  </view>
+
+
+ <view class="flex-style">
+  <view class="flex-item active" bindtouchstart="goToCar">驾车</view>
+  <view class="flex-item" bindtouchstart="goToWalk">步行</view>
+  <view class="flex-item" bindtouchstart="goToBus">公交</view>
+  <view class="flex-item" bindtouchstart="goToRide">骑行</view>
+</view>
+
+
+
+
+<view class="map_container">
+ <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" 
+  bindtap='openLocation'
+  markers="{{markers}}" 
+  scale="50" show-location="true" 
+  bindmarkertap="makertap">
+  </map>
+</view>
